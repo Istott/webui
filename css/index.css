@@ -155,7 +155,7 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 60%;
+  max-width: 100%;
   width: 100%;
   margin: 0 auto;
 }
@@ -173,11 +173,11 @@ p {
 }
 .navigation .top {
   display: flex;
-  Justify-content: center;
-  flex-direction: column;
+  Justify-content: space-between;
+  flex-direction: row;
   align-items: center;
-  width: 80%;
-  background-color: #A0A0A0;
+  width: 100%;
+  background-color: #008B5B;
   opacity: 0.9;
 }
 @media (max-width: 500px) {
@@ -186,10 +186,11 @@ p {
   }
 }
 .navigation .spacewalkers {
-  padding: 1% 0;
+  padding: 1% 0 1% 2%;
 }
 .navigation .spacewalkers h1 {
-  font-size: 4.2rem;
+  font-size: 1.6rem;
+  color: #FAFAFA;
 }
 @media (max-width: 500px) {
   .navigation .spacewalkers h1 {
@@ -197,7 +198,7 @@ p {
   }
 }
 .navigation nav {
-  width: 45%;
+  width: 35%;
   display: flex;
   justify-content: space-evenly;
   font-size: 1.6rem;
@@ -214,11 +215,11 @@ p {
 }
 .navigation nav a {
   text-decoration: none;
-  color: black;
+  color: #FAFAFA;
 }
 footer {
-  color: #22283B;
-  background: #f4f4f4;
+  color: #FFFFFF;
+  background: #2D2D2D;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
@@ -241,12 +242,13 @@ footer {
 }
 .home .intro .topheader {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
   width: 100%;
 }
 .home .intro .topheader .topimg {
-  width: 100%;
+  width: 40%;
   display: flex;
   justify-content: center;
 }
@@ -259,6 +261,15 @@ footer {
 }
 .home .intro .topheader p {
   padding: 0 15px;
+}
+.home .intro .topheader .finally {
+  width: 50%;
+  border: 1px red solid;
+}
+.home .intro .topheader .finally .signup {
+  display: flex;
+  justify-content: center;
+  border: 1px red solid;
 }
 .home .space-images {
   display: flex;
