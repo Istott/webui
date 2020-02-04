@@ -1,0 +1,174 @@
+.home {
+    .bordercolor();
+    margin-top: 7%;
+  
+    @media @phone {
+      margin-top: 15%;
+    }
+  
+    .intro {
+      .bordercolor();
+      width: 100%;
+  
+      .topheader {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 100%;
+  
+        .topimg {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+  
+        img {
+          border-radius: 10px;
+          width: 100%;
+        }
+  
+        h2 {
+          padding: 15px;
+        }
+  
+        p {
+          padding:0 15px;
+        }
+      }
+    
+    }
+  
+    .space-images {
+      display: flex;
+      width: 100%;
+      .justifybetween();
+      .bordercolor();
+  
+      .threepic {
+        .bordercolor();
+        display: flex;
+        width: 100%;
+        .justifybetween();
+        height: 30vh;
+      }
+  
+      img {
+        width: 28%;
+        margin: 20px 2.5%;
+        border-radius: 20px;
+        height: 100%;
+      }
+  
+      :nth-child(1) {
+        @media @phone {
+          width: 100%;
+          height: 50vh;
+        }
+      }
+  
+      :nth-child(2) {
+        @media @phone {
+          display: none;
+        } 
+      }
+  
+      :nth-child(3)  {
+        @media @phone {
+          display: none;
+        }
+      }
+  
+      
+     
+    }
+    
+  
+    .visit-planets {
+      padding: 1%;
+  
+      .planets {
+        padding: 8% 0 0 0;
+      }
+  
+      h3 {
+        margin-top: 11px;
+      }
+  
+      p {
+        margin-top: 13px;
+      }
+    }
+  
+    .walk {
+      margin-top: 60px;
+      border-top: 1px solid @main-border-color;
+      padding: 50px 60px;
+      display: flex;
+      justify-content: center;
+  
+      @media @phone {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 1%;
+      }
+  
+      .walk-text {
+        width: 50%;
+  
+        @media @phone {
+          width: 100%;
+        }
+  
+        h3 {
+          margin-bottom: 10px;
+        }
+  
+        p {
+          margin-bottom: 26px;
+        }
+  
+        .btn {
+          width: 80%;
+  
+          @media @phone {
+            width: 100%;
+          }
+        
+        }
+  
+        button {
+          .buttonsignup();
+  
+          @media @phone {
+            width: 100%;
+            height: 8vh;
+          }
+  
+          &:hover {
+            background-color: white;
+            color: black;
+          }
+        }
+  
+        
+      }
+  
+      .walk-img {
+        width: 46%;
+        margin-left: 4%;
+  
+        @media @phone {
+          width: 100%;
+        }
+        
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
+      }
+    }
+  }// home

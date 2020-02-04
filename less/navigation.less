@@ -1,0 +1,54 @@
+.navigation {
+    width: 100%;
+    display: flex;
+    Justify-content: center;
+    position: fixed;
+    top: 0;
+
+    .top {
+        display: flex;
+        Justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        background-color: @nav-bg;
+            opacity: .9;
+
+        @media @phone {
+            width: 100%;
+        }
+    }
+
+    .spacewalkers {
+        padding: 1% 0;
+
+        h1 {
+            font-size: 4.2rem;
+
+            @media @phone {
+                Font-size: 3rem;
+            }
+        }
+    }
+
+    nav {
+        width: 45%;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1.6rem;
+        text-decoration: none;
+        padding: 1% 0;
+        border: 1px #008B5B solid;
+        background-color: #008B5B;
+
+        @media @phone {
+            Font-size: 1.5rem;
+            width: 65%;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
