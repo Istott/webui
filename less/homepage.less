@@ -1,6 +1,6 @@
 .home {
     .bordercolor();
-    margin-top: 7%;
+    margin-top: 3%;
   
     @media @phone {
       margin-top: 15%;
@@ -9,6 +9,7 @@
     .intro {
       .bordercolor();
       width: 100%;
+      background: linear-gradient(38.54deg, #FFFFFF 21.78%, #D1D1D1 113.31%);
   
       .topheader {
         display: flex;
@@ -27,30 +28,51 @@
           border-radius: 10px;
           width: 100%;
         }
-  
-        h2 {
-          padding: 15px;
-        }
-  
-        p {
-          padding:0 15px;
-        }
 
         .finally {
             width: 50%;
-            border: 1px red solid;
+            
 
-            .signup {
-                display: flex;
-                justify-content: center;
-                border: 1px red solid;
+            h2 {
+                padding: 2%;
+                color: @malachite;
             }
+        
+            p {
+                padding:0 2%;
+            }
+
+            
         }
 
-        
-      }
+        .signup {
+            width: 80%;
+            padding: 1%;
+  
+            @media @phone {
+              width: 100%;
+            }   
+        }
+
+        button {
+            display: flex;
+            justify-content: center;
+            .buttonsignup();
+
+            @media @phone {
+                width: 100%;
+                height: 8vh;
+            }
     
+            &:hover {
+                background-color: @malachite;
+                color: @alabaster;
+            }
+        }
+      
+      }
     }
+    
   
     .space-images {
       display: flex;
@@ -63,62 +85,56 @@
         display: flex;
         width: 100%;
         .justifybetween();
-        height: 30vh;
-      }
-  
-      img {
-        width: 28%;
-        margin: 20px 2.5%;
-        border-radius: 20px;
-        height: 100%;
-      }
-  
-      :nth-child(1) {
+        margin: 1% 0;
+        
+
+        h2 {
+            font-size: 2.2rem;
+            padding: 2% 0;
+        }
+
         @media @phone {
-          width: 100%;
-          height: 50vh;
+          justify-content: center;
+          flex-direction: column;
         }
       }
-  
-      :nth-child(2) {
-        @media @phone {
-          display: none;
-        } 
+
+      .icon {
+          display: flex;
+          justify-content: center;
+          padding: 9% 0 4% 0;
+          .bordercolor()
       }
-  
-      :nth-child(3)  {
-        @media @phone {
-          display: none;
-        }
+
+      .create {
+        background: @alabaster;
+        margin: 0 1%;
+        padding: 1%;
+        
       }
-  
-      
+
+      .track {
+        background: @alabaster;
+        margin: 0 1%;
+        padding: 1%;
+      }
+
+      .analyze {
+        background: @alabaster;
+        margin: 0 1%;
+        padding: 1%;
+      }
      
-    }
-    
-  
-    .visit-planets {
-      padding: 1%;
-  
-      .planets {
-        padding: 8% 0 0 0;
-      }
-  
-      h3 {
-        margin-top: 11px;
-      }
-  
-      p {
-        margin-top: 13px;
-      }
     }
   
     .walk {
-      margin-top: 60px;
+      margin-top: 0;
       border-top: 1px solid @main-border-color;
-      padding: 50px 60px;
+      padding: 0 4%;
       display: flex;
       justify-content: center;
+      align-items: center;
+      background: @alabaster;
   
       @media @phone {
         display: flex;
@@ -131,6 +147,7 @@
   
       .walk-text {
         width: 50%;
+        .bordercolor();
   
         @media @phone {
           width: 100%;
@@ -155,15 +172,16 @@
   
         button {
           .buttonsignup();
-  
+          background-color: @white;
+          
           @media @phone {
             width: 100%;
             height: 8vh;
           }
   
           &:hover {
-            background-color: white;
-            color: black;
+            background-color: @malachite;
+            color: @alabaster;
           }
         }
   
@@ -171,8 +189,9 @@
       }
   
       .walk-img {
-        width: 46%;
-        margin-left: 4%;
+        width: 30%;
+        margin-left: 15%;
+        padding-top: 4%;
   
         @media @phone {
           width: 100%;
@@ -185,4 +204,4 @@
         }
       }
     }
-  }// home
+}// home

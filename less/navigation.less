@@ -4,13 +4,14 @@
     Justify-content: center;
     position: fixed;
     top: 0;
+    padding: 0;
 
     .top {
         display: flex;
         Justify-content: space-between;
         flex-direction: row;
-        align-items: center;
         width: 100%;
+        padding: 0;
         background-color: @nav-bg;
             opacity: .9;
 
@@ -21,6 +22,7 @@
 
     .spacewalkers {
         padding: 1% 0 1% 2%;
+        width: 30%;
 
         h1 {
             font-size: 1.6rem;
@@ -41,6 +43,7 @@
         padding: 1% 0;
         border: 1px #008B5B solid;
         background-color: #008B5B;
+        .bordercolor();
        
 
         @media @phone {
@@ -51,7 +54,22 @@
         a {
             text-decoration: none;
             color: @nav-font;
+            .bordercolor();
+            padding-bottom: 0%;
+
+            &:hover {
+                border: 1px white solid;
+                border-radius: 4px;
+                padding: .5%;
+            }
+
+            
            
         }
+        :nth-child(1) {
+            border-bottom: 2px white solid;
+        }
+
+        
     }
 }
