@@ -73,3 +73,81 @@
         
     }
 }
+
+//////////////////////////about nav//////////////////
+
+.navigationA {
+    width: 100%;
+    display: flex;
+    Justify-content: center;
+    position: fixed;
+    top: 0;
+    padding: 0;
+
+    .topA {
+        display: flex;
+        Justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        padding: 0;
+        background-color: @nav-bg;
+            opacity: .9;
+
+        @media @phone {
+            width: 100%;
+        }
+    }
+
+    .journalA {
+        padding: 1% 0 1% 2%;
+        width: 30%;
+
+        h1 {
+            font-size: 1.6rem;
+            color: @nav-font;
+
+            @media @phone {
+                Font-size: 3rem;
+            }
+        }
+    }
+
+    nav {
+        width: 35%;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1.6rem;
+        text-decoration: none;
+        padding: 1% 0;
+        border: 1px #008B5B solid;
+        background-color: #008B5B;
+        .bordercolor();
+       
+
+        @media @phone {
+            Font-size: 1.5rem;
+            width: 65%;
+        }
+
+        a {
+            text-decoration: none;
+            color: @nav-font;
+            .bordercolor();
+            padding-bottom: 0%;
+
+            &:hover {
+                border: 1px white solid;
+                border-radius: 4px;
+                padding: .5%;
+            }
+
+            
+           
+        }
+        :nth-child(2) {
+            border-bottom: 2px white solid;
+        }
+
+        
+    }
+}
