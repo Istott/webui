@@ -12,6 +12,7 @@ footer {
     color: @malachite;
     font-size: 1.8rem;
     padding-left: .4%;
+    width: 10%;
   }
 
   nav {
@@ -19,7 +20,11 @@ footer {
     justify-content: flex-end;
     .bordercolor();
     width: 43%;
-    padding-right: 5%;
+    padding-right: 1%;
+
+    :nth-child(2) {
+      width: 25%;
+    }
   }
 
   nav a {
@@ -27,5 +32,11 @@ footer {
     color: @malachite;
     font-size: 1.8rem;
     padding-right: 1%;
+    
+    
+
+    &:hover {
+      color: @alabaster;
+    }
   }
 }

@@ -218,9 +218,7 @@ p {
   padding-bottom: 0%;
 }
 .navigation nav a:hover {
-  border: 1px white solid;
-  border-radius: 4px;
-  padding: 0.5%;
+  color: #2D2D2D;
 }
 .navigation nav :nth-child(1) {
   border-bottom: 2px white solid;
@@ -282,9 +280,7 @@ p {
   padding-bottom: 0%;
 }
 .navigationA nav a:hover {
-  border: 1px white solid;
-  border-radius: 4px;
-  padding: 0.5%;
+  color: #2D2D2D;
 }
 .navigationA nav :nth-child(2) {
   border-bottom: 2px white solid;
@@ -302,18 +298,25 @@ footer p1 {
   color: #008B5B;
   font-size: 1.8rem;
   padding-left: 0.4%;
+  width: 10%;
 }
 footer nav {
   display: flex;
   justify-content: flex-end;
   width: 43%;
-  padding-right: 5%;
+  padding-right: 1%;
+}
+footer nav :nth-child(2) {
+  width: 25%;
 }
 footer nav a {
   text-decoration: none;
   color: #008B5B;
   font-size: 1.8rem;
   padding-right: 1%;
+}
+footer nav a:hover {
+  color: #FAFAFA;
 }
 .home {
   margin-top: 3%;
@@ -492,6 +495,7 @@ footer nav a {
   width: 30%;
   margin-left: 15%;
   padding-top: 4%;
+  border: 1px red solid;
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
@@ -499,7 +503,5 @@ footer nav a {
   }
 }
 .home .walk .walk-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+  border: 1px red solid;
 }
