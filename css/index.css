@@ -192,11 +192,6 @@ p {
   font-size: 1.6rem;
   color: #FAFAFA;
 }
-@media (max-width: 500px) {
-  .navigation .spacewalkers h1 {
-    Font-size: 3rem;
-  }
-}
 .navigation nav {
   width: 35%;
   display: flex;
@@ -294,11 +289,44 @@ footer {
   justify-content: flex-end;
   align-items: center;
 }
-footer p1 {
+@media (max-width: 500px) {
+  footer {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+footer .copyright {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  footer .copyright {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  footer .copyright {
+    width: 100%;
+  }
+}
+footer .copyright p1 {
   color: #008B5B;
   font-size: 1.6rem;
   padding-left: 0.4%;
-  width: 20%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  footer .copyright p1 {
+    width: 45%;
+  }
+}
+@media (max-width: 500px) {
+  footer .copyright p1 {
+    width: 25%;
+  }
 }
 footer nav {
   display: flex;
@@ -308,6 +336,16 @@ footer nav {
 }
 footer nav :nth-child(2) {
   width: 35%;
+}
+@media (max-width: 800px) {
+  footer nav :nth-child(2) {
+    width: 80%;
+  }
+}
+@media (max-width: 800px) {
+  footer nav {
+    justify-content: center;
+  }
 }
 footer nav a {
   text-decoration: none;
@@ -368,7 +406,7 @@ footer nav a:hover {
 .home .intro .topheader button {
   display: flex;
   justify-content: center;
-  width: 25%;
+  width: 45%;
   height: 5vh;
   border-radius: 4px;
   background-color: #FAFAFA;
@@ -399,6 +437,11 @@ footer nav a:hover {
   align-items: center;
   margin: 1% 0;
 }
+@media (max-width: 500px) {
+  .home .space-images .threepic {
+    flex-direction: column;
+  }
+}
 .home .space-images .threepic h2 {
   font-size: 2.2rem;
   padding: 2% 0;
@@ -419,15 +462,30 @@ footer nav a:hover {
   margin: 0 1%;
   padding: 1%;
 }
+@media (max-width: 500px) {
+  .home .space-images .create {
+    margin: 2%;
+  }
+}
 .home .space-images .track {
   background: #FAFAFA;
   margin: 0 1%;
   padding: 1%;
 }
+@media (max-width: 500px) {
+  .home .space-images .track {
+    margin: 2%;
+  }
+}
 .home .space-images .analyze {
   background: #FAFAFA;
   margin: 0 1%;
   padding: 1%;
+}
+@media (max-width: 500px) {
+  .home .space-images .analyze {
+    margin: 2%;
+  }
 }
 .home .walk {
   margin-top: 0;
@@ -451,6 +509,11 @@ footer nav a:hover {
 .home .walk .walk-text {
   width: 50%;
 }
+@media (max-width: 800px) {
+  .home .walk .walk-text {
+    width: 70%;
+  }
+}
 @media (max-width: 500px) {
   .home .walk .walk-text {
     width: 100%;
@@ -466,13 +529,18 @@ footer nav a:hover {
 .home .walk .walk-text .btn {
   width: 80%;
 }
+@media (max-width: 800px) {
+  .home .walk .walk-text .btn {
+    width: 70%;
+  }
+}
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
-    width: 100%;
+    width: 50%;
   }
 }
 .home .walk .walk-text button {
-  width: 25%;
+  width: 45%;
   height: 5vh;
   border-radius: 4px;
   background-color: #FAFAFA;
@@ -480,6 +548,11 @@ footer nav a:hover {
   border: 1px #008B5B solid;
   font-size: 1.8rem;
   background-color: #FFFFFF;
+}
+@media (max-width: 800px) {
+  .home .walk .walk-text button {
+    width: 70%;
+  }
 }
 @media (max-width: 500px) {
   .home .walk .walk-text button {
@@ -493,12 +566,16 @@ footer nav a:hover {
 }
 .home .walk .walk-img {
   width: 30%;
-  margin-left: 15%;
   padding-top: 4%;
+}
+@media (max-width: 800px) {
+  .home .walk .walk-img {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
-    width: 100%;
+    display: none;
   }
 }
 .about {
