@@ -175,6 +175,7 @@ p {
   flex-direction: row;
   width: 100%;
   padding: 0;
+  z-index: 10;
   background-color: #008B5B;
   opacity: 0.9;
 }
@@ -289,25 +290,24 @@ footer {
   color: #FFFFFF;
   background: #2D2D2D;
   padding: 20px 0;
-  border: 1px double #e0e0e0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 footer p1 {
   color: #008B5B;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding-left: 0.4%;
-  width: 10%;
+  width: 20%;
 }
 footer nav {
   display: flex;
   justify-content: flex-end;
-  width: 43%;
+  width: 30%;
   padding-right: 1%;
 }
 footer nav :nth-child(2) {
-  width: 25%;
+  width: 35%;
 }
 footer nav a {
   text-decoration: none;
@@ -495,13 +495,226 @@ footer nav a:hover {
   width: 30%;
   margin-left: 15%;
   padding-top: 4%;
-  border: 1px red solid;
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
     width: 100%;
   }
 }
-.home .walk .walk-img img {
-  border: 1px red solid;
+.about {
+  margin-top: 3%;
+}
+.about #bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 150%;
+  height: 200%;
+  z-index: -5;
+}
+.about #bg #bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+@media (max-width: 500px) {
+  .about {
+    margin-top: 15%;
+  }
+}
+.about .aboutUs {
+  width: 100%;
+}
+.about .team {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+}
+.about .team .PL {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.about .team .PL .jackie {
+  width: 45%;
+  padding: 2%;
+  background-color: #D1D1D1;
+  opacity: 0.9;
+  margin: 1%;
+  z-index: -1;
+}
+.about .team .PL .jackie h2 {
+  display: flex;
+  justify-content: center;
+}
+.about .team .PL .jackie h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+.about .team .uiDev {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+}
+.about .team .uiDev .Isaac {
+  width: 45%;
+  padding: 2%;
+  background-color: #D1D1D1;
+  opacity: 0.9;
+  margin: 1%;
+  z-index: -1;
+}
+.about .team .uiDev .Isaac h2 {
+  display: flex;
+  justify-content: center;
+}
+.about .team .uiDev .Isaac h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+.about .team .uiDev .Charlie {
+  width: 45%;
+  padding: 2%;
+  background-color: #D1D1D1;
+  opacity: 0.9;
+  margin: 1%;
+  z-index: -1;
+}
+.about .team .uiDev .Charlie h2 {
+  display: flex;
+  justify-content: center;
+}
+.about .team .uiDev .Charlie h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+.about .team .React1 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+}
+.about .team .React1 .Allen {
+  width: 45%;
+  padding: 2%;
+  background-color: #D1D1D1;
+  opacity: 0.9;
+  margin: 1%;
+  z-index: -1;
+}
+.about .team .React1 .Allen h2 {
+  display: flex;
+  justify-content: center;
+}
+.about .team .React1 .Allen h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+.about .team .React1 .Adebola {
+  width: 45%;
+  padding: 2%;
+  background-color: #D1D1D1;
+  opacity: 0.9;
+  margin: 1%;
+  z-index: -1;
+}
+.about .team .React1 .Adebola h2 {
+  display: flex;
+  justify-content: center;
+}
+.about .team .React1 .Adebola h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+.about .team .react2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+}
+.about .team .react2 .Kai {
+  width: 45%;
+  padding: 2%;
+  background-color: #D1D1D1;
+  opacity: 0.9;
+  margin: 1%;
+  z-index: -1;
+}
+.about .team .react2 .Kai h2 {
+  display: flex;
+  justify-content: center;
+}
+.about .team .react2 .Kai h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+.about .team .react2 .Robert {
+  width: 45%;
+  padding: 2%;
+  background-color: #D1D1D1;
+  opacity: 0.9;
+  margin: 1%;
+  z-index: -1;
+}
+.about .team .react2 .Robert h2 {
+  display: flex;
+  justify-content: center;
+}
+.about .team .react2 .Robert h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+.about .team .backendDev {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+}
+.about .team .backendDev .Sergio {
+  width: 45%;
+  padding: 2%;
+  background-color: #D1D1D1;
+  opacity: 0.9;
+  margin: 1%;
+  z-index: -1;
+}
+.about .team .backendDev .Sergio h2 {
+  display: flex;
+  justify-content: center;
+}
+.about .team .backendDev .Sergio h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+.about .team .backendDev .Mike {
+  width: 45%;
+  padding: 2%;
+  background-color: #D1D1D1;
+  opacity: 0.9;
+  margin: 1%;
+  z-index: -1;
+}
+.about .team .backendDev .Mike h2 {
+  display: flex;
+  justify-content: center;
+}
+.about .team .backendDev .Mike h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
 }
