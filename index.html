@@ -10,6 +10,9 @@
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/nav.js" async></script>
+
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -21,16 +24,20 @@
  <!-- navigation code here -->
     <div class="navigation">
         <div class="top">
-            <div class="spacewalkers">
+            <div class="journal">
                 <h1>WeightLifting Journal</h1>
             </div>
             
-            <nav>
+            <div id="myLinks">
                 <a href="#">Home</a>
                 <a href="about.html">About</a>
                 <a href="#">Contact</a>
                 <a href="#">Download</a>
-            </nav>
+            </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
     </div>
 
@@ -57,7 +64,7 @@
         <section class="space-images">
             <div class="threepic">
                 <div class="create">
-                    <div class="icon">
+                    <div class="icon1">
                         <img src="img/edit icon.png" alt="edit">
                     </div>
         
@@ -66,7 +73,7 @@
                     <p>weightlifting Journal gives you total control and customization over your routines.</p>
                 </div>
                 <div class="track">
-                    <div class="icon">
+                    <div class="icon1">
                         <img src="img/calendar icon.png" alt="calendar">
                     </div>
         
@@ -75,7 +82,7 @@
                     <p>We give you the ability to track your exercises. and it's totally up to you. Lift by lift, or set by set.</p>
                 </div>
                 <div class="analyze">
-                    <div class="icon">
+                    <div class="icon1">
                         <img src="img/graph icon.png" alt="graph">
                     </div>
         

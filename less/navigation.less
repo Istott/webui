@@ -19,35 +19,68 @@
 
         @media @phone {
             width: 100%;
+            overflow: hidden;
+            position: relative;
         }
     }
 
-    .spacewalkers {
+    .top a i {
+        display: none;
+
+        @media @phone {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 2rem;
+            display: block;
+        } 
+
+    }
+
+
+    .journal {
         padding: 1% 0 1% 2%;
-        width: 30%;
+        width: 60%;
 
         h1 {
-            font-size: 1.6rem;
+            font-size: 2rem;
             color: @nav-font;
+            width: 100%;
 
+            @media @phone {
+               padding: 4%;
+            }          
         }
+
+        @media @phone {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }       
     }
 
-    nav {
+    #myLinks {
         width: 35%;
         display: flex;
         justify-content: space-evenly;
+        
         font-size: 1.6rem;
         text-decoration: none;
         padding: 1% 0;
-        border: 1px #008B5B solid;
         background-color: #008B5B;
         .bordercolor();
+
+        @media @ipadmini {
+            width: 65%;
+        }
        
 
         @media @phone {
+            padding-top: 8%;
+            height: 30vh;
             Font-size: 1.5rem;
-            width: 65%;
+            width: 25%;
+            display: none;
         }
 
         a {
@@ -55,16 +88,43 @@
             color: @nav-font;
             .bordercolor();
             padding-bottom: 0%;
+            
 
             &:hover {
                 color: @mineshaft;
+                
             }
 
-            
-           
+            @media @phone {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                align-content: space-evenly;
+                padding: 8%;
+                overflow: auto;
+                height: 15;
+            }
         }
+
         :nth-child(1) {
             border-bottom: 2px white solid;
+
+            @media @phone {
+                border-bottom: 2px @malachite solid;
+            }
+        }
+
+        .top a .icon {
+    
+
+
+            @media @phone {
+                background: black;
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
         }
 
         
