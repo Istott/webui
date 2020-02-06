@@ -415,12 +415,17 @@ footer nav a {
 footer nav a:hover {
   color: #FAFAFA;
 }
+@media (max-width: 667px) {
+  footer nav a {
+    padding-top: 5%;
+  }
+}
 .home {
   margin-top: 3%;
 }
 @media (max-width: 667px) {
   .home {
-    margin-top: 15%;
+    margin-top: 10%;
   }
 }
 .home .intro {
