@@ -130,7 +130,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #5E6164;
 }
 h1,
@@ -138,7 +138,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #23293B;
 }
 h2 {
@@ -402,6 +402,8 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  z-index: 10;
+  position: relative;
 }
 @media (max-width: 667px) {
   footer {
@@ -478,6 +480,11 @@ footer nav a:hover {
 .home {
   margin-top: 3%;
 }
+@media (max-width: 1000px) {
+  .home {
+    margin-top: 4%;
+  }
+}
 @media (max-width: 667px) {
   .home {
     margin-top: 10%;
@@ -535,8 +542,8 @@ footer nav a:hover {
 }
 @media (max-width: 667px) {
   .home .intro .topheader button {
-    width: 100%;
-    height: 8vh;
+    width: 60%;
+    height: 5vh;
   }
 }
 .home .intro .topheader button:hover {
@@ -556,13 +563,9 @@ footer nav a:hover {
   align-items: center;
   margin: 1% 0;
 }
-@media (max-width: 667px) {
-  .home .middle .threepic {
-    flex-direction: column;
-  }
-}
 .home .middle .threepic h2 {
   font-size: 2.2rem;
+  font-weight: bold;
   padding: 2% 0;
 }
 @media (max-width: 667px) {
@@ -574,12 +577,13 @@ footer nav a:hover {
 .home .middle .icon1 {
   display: flex;
   justify-content: center;
-  padding: 9% 0 4% 0;
+  padding: 5% 0;
 }
 .home .middle .create {
+  height: 35vh;
   background: #FAFAFA;
   margin: 0 1%;
-  padding: 1%;
+  padding: 3% 3% 6% 3%;
 }
 @media (max-width: 667px) {
   .home .middle .create {
@@ -587,9 +591,10 @@ footer nav a:hover {
   }
 }
 .home .middle .track {
+  height: 35vh;
   background: #FAFAFA;
   margin: 0 1%;
-  padding: 1%;
+  padding: 3% 3% 6% 3%;
 }
 @media (max-width: 667px) {
   .home .middle .track {
@@ -597,9 +602,10 @@ footer nav a:hover {
   }
 }
 .home .middle .analyze {
+  height: 35vh;
   background: #FAFAFA;
   margin: 0 1%;
-  padding: 1%;
+  padding: 3% 3% 6% 3%;
 }
 @media (max-width: 667px) {
   .home .middle .analyze {
@@ -609,11 +615,17 @@ footer nav a:hover {
 .home .noDistractions {
   margin-top: 0;
   border-top: 1px solid #dee2e6;
-  padding: 0 4%;
+  padding: 0% 4%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   background: #FAFAFA;
+  z-index: 1;
+}
+@media (max-width: 1000px) {
+  .home .noDistractions {
+    padding: 3% 4%;
+  }
 }
 @media (max-width: 667px) {
   .home .noDistractions {
@@ -635,10 +647,13 @@ footer nav a:hover {
 }
 @media (max-width: 667px) {
   .home .noDistractions .focus {
-    width: 100%;
+    width: 95%;
+    padding-bottom: 5%;
+    padding-top: 5%;
   }
 }
 .home .noDistractions .focus h3 {
+  font-weight: bold;
   margin-bottom: 2%;
   color: #008B5B;
 }
@@ -655,7 +670,7 @@ footer nav a:hover {
 }
 @media (max-width: 667px) {
   .home .noDistractions .focus .btn {
-    width: 50%;
+    width: 30%;
   }
 }
 .home .noDistractions .focus button {
@@ -676,7 +691,7 @@ footer nav a:hover {
 @media (max-width: 667px) {
   .home .noDistractions .focus button {
     width: 100%;
-    height: 8vh;
+    height: 5vh;
   }
 }
 .home .noDistractions .focus button:hover {
@@ -697,8 +712,13 @@ footer nav a:hover {
     display: none;
   }
 }
+.home .noDistractions .screenshot img {
+  position: relative;
+  width: 100%;
+  top: 24px;
+}
 .about {
-  margin-top: 3%;
+  margin-top: 5%;
 }
 .about #bg {
   position: fixed;
@@ -746,7 +766,6 @@ footer nav a:hover {
   width: 45%;
   padding: 2%;
   background-color: #D1D1D1;
-  border-radius: 9px;
   opacity: 0.9;
   margin: 1%;
   z-index: -1;
@@ -754,11 +773,13 @@ footer nav a:hover {
 .about .team .PL .jackie h2 {
   display: flex;
   justify-content: center;
+  font-weight: bold;
 }
 .about .team .PL .jackie h3 {
   display: flex;
   justify-content: center;
   font-size: 2rem;
+  font-weight: bold;
 }
 @media (max-width: 667px) {
   .about .team .PL .jackie h2 {
@@ -775,7 +796,6 @@ footer nav a:hover {
   width: 45%;
   padding: 2%;
   background-color: #D1D1D1;
-  border-radius: 9px;
   opacity: 0.9;
   margin: 1%;
   z-index: -1;
@@ -783,11 +803,13 @@ footer nav a:hover {
 .about .team .uiDev .Isaac h2 {
   display: flex;
   justify-content: center;
+  font-weight: bold;
 }
 .about .team .uiDev .Isaac h3 {
   display: flex;
   justify-content: center;
   font-size: 2rem;
+  font-weight: bold;
 }
 @media (max-width: 667px) {
   .about .team .uiDev .Isaac h2 {
@@ -798,7 +820,6 @@ footer nav a:hover {
   width: 45%;
   padding: 2%;
   background-color: #D1D1D1;
-  border-radius: 9px;
   opacity: 0.9;
   margin: 1%;
   z-index: -1;
@@ -806,11 +827,13 @@ footer nav a:hover {
 .about .team .uiDev .Charlie h2 {
   display: flex;
   justify-content: center;
+  font-weight: bold;
 }
 .about .team .uiDev .Charlie h3 {
   display: flex;
   justify-content: center;
   font-size: 2rem;
+  font-weight: bold;
 }
 @media (max-width: 667px) {
   .about .team .uiDev .Charlie h2 {
@@ -827,7 +850,6 @@ footer nav a:hover {
   width: 45%;
   padding: 2%;
   background-color: #D1D1D1;
-  border-radius: 9px;
   opacity: 0.9;
   margin: 1%;
   z-index: -1;
@@ -835,11 +857,13 @@ footer nav a:hover {
 .about .team .React1 .Allen h2 {
   display: flex;
   justify-content: center;
+  font-weight: bold;
 }
 .about .team .React1 .Allen h3 {
   display: flex;
   justify-content: center;
   font-size: 2rem;
+  font-weight: bold;
 }
 @media (max-width: 667px) {
   .about .team .React1 .Allen h2 {
@@ -850,7 +874,6 @@ footer nav a:hover {
   width: 45%;
   padding: 2%;
   background-color: #D1D1D1;
-  border-radius: 9px;
   opacity: 0.9;
   margin: 1%;
   z-index: -1;
@@ -858,11 +881,13 @@ footer nav a:hover {
 .about .team .React1 .Adebola h2 {
   display: flex;
   justify-content: center;
+  font-weight: bold;
 }
 .about .team .React1 .Adebola h3 {
   display: flex;
   justify-content: center;
   font-size: 2rem;
+  font-weight: bold;
 }
 @media (max-width: 667px) {
   .about .team .React1 .Adebola h2 {
@@ -879,7 +904,6 @@ footer nav a:hover {
   width: 45%;
   padding: 2%;
   background-color: #D1D1D1;
-  border-radius: 9px;
   opacity: 0.9;
   margin: 1%;
   z-index: -1;
@@ -887,11 +911,13 @@ footer nav a:hover {
 .about .team .react2 .Kai h2 {
   display: flex;
   justify-content: center;
+  font-weight: bold;
 }
 .about .team .react2 .Kai h3 {
   display: flex;
   justify-content: center;
   font-size: 2rem;
+  font-weight: bold;
 }
 @media (max-width: 667px) {
   .about .team .react2 .Kai h2 {
@@ -902,7 +928,6 @@ footer nav a:hover {
   width: 45%;
   padding: 2%;
   background-color: #D1D1D1;
-  border-radius: 9px;
   opacity: 0.9;
   margin: 1%;
   z-index: -1;
@@ -910,11 +935,13 @@ footer nav a:hover {
 .about .team .react2 .Robert h2 {
   display: flex;
   justify-content: center;
+  font-weight: bold;
 }
 .about .team .react2 .Robert h3 {
   display: flex;
   justify-content: center;
   font-size: 2rem;
+  font-weight: bold;
 }
 @media (max-width: 667px) {
   .about .team .react2 .Robert h2 {
@@ -931,7 +958,6 @@ footer nav a:hover {
   width: 45%;
   padding: 2%;
   background-color: #D1D1D1;
-  border-radius: 9px;
   opacity: 0.9;
   margin: 1%;
   z-index: -1;
@@ -939,11 +965,13 @@ footer nav a:hover {
 .about .team .backendDev .Sergio h2 {
   display: flex;
   justify-content: center;
+  font-weight: bold;
 }
 .about .team .backendDev .Sergio h3 {
   display: flex;
   justify-content: center;
   font-size: 2rem;
+  font-weight: bold;
 }
 @media (max-width: 667px) {
   .about .team .backendDev .Sergio h2 {
@@ -954,7 +982,6 @@ footer nav a:hover {
   width: 45%;
   padding: 2%;
   background-color: #D1D1D1;
-  border-radius: 9px;
   opacity: 0.9;
   margin: 1%;
   z-index: -1;
@@ -962,11 +989,13 @@ footer nav a:hover {
 .about .team .backendDev .Mike h2 {
   display: flex;
   justify-content: center;
+  font-weight: bold;
 }
 .about .team .backendDev .Mike h3 {
   display: flex;
   justify-content: center;
   font-size: 2rem;
+  font-weight: bold;
 }
 @media (max-width: 667px) {
   .about .team .backendDev .Mike h2 {
