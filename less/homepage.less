@@ -74,80 +74,79 @@
     }
     
   
-    .space-images {
-      display: flex;
-      width: 100%;
-      .justifybetween();
-      .bordercolor();
-  
-      .threepic {
-        .bordercolor();
+    .middle {
         display: flex;
         width: 100%;
         .justifybetween();
-        margin: 1% 0;
+        .bordercolor();
+    
+        .threepic {
+            .bordercolor();
+            display: flex;
+            width: 100%;
+            .justifybetween();
+            margin: 1% 0;
 
-        @media @phone {
-            flex-direction: column;
+            @media @phone {
+                flex-direction: column;
+                
+            }
             
-        }
-        
 
-        h2 {
-            font-size: 2.2rem;
-            padding: 2% 0;
+            h2 {
+                font-size: 2.2rem;
+                padding: 2% 0;
+            }
+
+            @media @phone {
+            justify-content: center;
+            flex-direction: column;
+            }
         }
 
-        @media @phone {
-          justify-content: center;
-          flex-direction: column;
-        }
-      }
-
-      .icon1 {
+        .icon1 {
           display: flex;
           justify-content: center;
           padding: 9% 0 4% 0;
           .bordercolor()
-      }
-
-      .create {
-        background: @alabaster;
-        margin: 0 1%;
-        padding: 1%;
-
-        @media @phone {
-            margin: 2%;
         }
-        
-        
-      }
 
-      .track {
-        background: @alabaster;
-        margin: 0 1%;
-        padding: 1%;
+        .create {
+            background: @alabaster;
+            margin: 0 1%;
+            padding: 1%;
 
-        @media @phone {
-            margin: 2%;
+            @media @phone {
+                margin: 2%;
+            }
         }
-        
-      }
+    
 
-      .analyze {
-        background: @alabaster;
-        margin: 0 1%;
-        padding: 1%;
+        .track {
+            background: @alabaster;
+            margin: 0 1%;
+            padding: 1%;
 
-        @media @phone {
-            margin: 2%;
+            @media @phone {
+                margin: 2%;
+            }
+            
         }
-        
-      }
+
+        .analyze {
+            background: @alabaster;
+            margin: 0 1%;
+            padding: 1%;
+
+            @media @phone {
+                margin: 2%;
+            }
+            
+        }
      
     }
   
-    .walk {
+    .noDistractions {
       margin-top: 0;
       border-top: 1px solid @main-border-color;
       padding: 0 4%;
@@ -165,7 +164,7 @@
         padding: 1%;
       }
   
-      .walk-text {
+      .focus {
         width: 50%;
         .bordercolor();
 
@@ -222,7 +221,7 @@
         
       }
   
-      .walk-img {
+      .screenshot {
         width: 30%;
         
         padding-top: 4%;
@@ -245,6 +244,7 @@
 //////////////////about page//////////////
 
 .about {
+    margin-top: 3%;
     
     #bg {
         position: fixed; 
@@ -255,20 +255,21 @@
         z-index: -5;
     
       
-      #bg img {
-        position: absolute; 
-        top: 0; 
-        left: 0; 
-        right: 0; 
-        bottom: 0; 
-        margin: auto; 
-        min-width: 50%;
-        min-height: 50%;
-      }
+        #bg img {
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            right: 0; 
+            bottom: 0; 
+            margin: auto; 
+            min-width: 50%;
+            min-height: 50%;
+        }
     }
-
-    .bordercolor();
-    margin-top: 3%;
+    
+    @media @ipadmini {
+        margin-top: 7%;
+    }
   
     @media @phone {
       margin-top: 15%;
@@ -290,8 +291,6 @@
             display: flex;
             justify-content: center;
             width: 100%;
-            
-            
             .bordercolor();
 
             .jackie {
@@ -305,7 +304,6 @@
             flex-direction: row;
             width: 100%;
             
-
             .Isaac {
                 .teamstyle();
             }

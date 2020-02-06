@@ -292,53 +292,108 @@ p {
   flex-direction: row;
   width: 100%;
   padding: 0;
+  z-index: 10;
   background-color: #008B5B;
   opacity: 0.9;
 }
 @media (max-width: 667px) {
   .navigationA .topA {
     width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+}
+.navigationA .topA a i {
+  display: none;
+}
+@media (max-width: 667px) {
+  .navigationA .topA a i {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2rem;
+    display: block;
   }
 }
 .navigationA .journalA {
   padding: 1% 0 1% 2%;
-  width: 30%;
+  width: 60%;
 }
 .navigationA .journalA h1 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #FAFAFA;
+  width: 100%;
 }
 @media (max-width: 667px) {
   .navigationA .journalA h1 {
-    Font-size: 3rem;
+    padding: 4%;
   }
 }
-.navigationA nav {
+@media (max-width: 667px) {
+  .navigationA .journalA {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+}
+.navigationA #myLinks {
   width: 35%;
   display: flex;
   justify-content: space-evenly;
   font-size: 1.6rem;
   text-decoration: none;
   padding: 1% 0;
-  border: 1px #008B5B solid;
   background-color: #008B5B;
 }
-@media (max-width: 667px) {
-  .navigationA nav {
-    Font-size: 1.5rem;
+@media (max-width: 1000px) {
+  .navigationA #myLinks {
     width: 65%;
   }
 }
-.navigationA nav a {
+@media (max-width: 667px) {
+  .navigationA #myLinks {
+    padding-top: 8%;
+    height: 30vh;
+    Font-size: 1.5rem;
+    width: 25%;
+    display: none;
+  }
+}
+.navigationA #myLinks a {
   text-decoration: none;
   color: #FAFAFA;
   padding-bottom: 0%;
 }
-.navigationA nav a:hover {
+.navigationA #myLinks a:hover {
   color: #2D2D2D;
 }
-.navigationA nav :nth-child(2) {
+@media (max-width: 667px) {
+  .navigationA #myLinks a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-content: space-evenly;
+    padding: 8%;
+    overflow: auto;
+    height: 15;
+  }
+}
+.navigationA #myLinks :nth-child(2) {
   border-bottom: 2px white solid;
+}
+@media (max-width: 667px) {
+  .navigationA #myLinks :nth-child(2) {
+    border-bottom: 2px #008B5B solid;
+  }
+}
+@media (max-width: 667px) {
+  .navigationA #myLinks .top a .icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
 footer {
   color: #FFFFFF;
@@ -488,13 +543,13 @@ footer nav a:hover {
   background-color: #008B5B;
   color: #FAFAFA;
 }
-.home .space-images {
+.home .middle {
   display: flex;
   width: 100%;
   jusitify-content: space-around;
   align-items: center;
 }
-.home .space-images .threepic {
+.home .middle .threepic {
   display: flex;
   width: 100%;
   jusitify-content: space-around;
@@ -502,56 +557,56 @@ footer nav a:hover {
   margin: 1% 0;
 }
 @media (max-width: 667px) {
-  .home .space-images .threepic {
+  .home .middle .threepic {
     flex-direction: column;
   }
 }
-.home .space-images .threepic h2 {
+.home .middle .threepic h2 {
   font-size: 2.2rem;
   padding: 2% 0;
 }
 @media (max-width: 667px) {
-  .home .space-images .threepic {
+  .home .middle .threepic {
     justify-content: center;
     flex-direction: column;
   }
 }
-.home .space-images .icon1 {
+.home .middle .icon1 {
   display: flex;
   justify-content: center;
   padding: 9% 0 4% 0;
 }
-.home .space-images .create {
+.home .middle .create {
   background: #FAFAFA;
   margin: 0 1%;
   padding: 1%;
 }
 @media (max-width: 667px) {
-  .home .space-images .create {
+  .home .middle .create {
     margin: 2%;
   }
 }
-.home .space-images .track {
+.home .middle .track {
   background: #FAFAFA;
   margin: 0 1%;
   padding: 1%;
 }
 @media (max-width: 667px) {
-  .home .space-images .track {
+  .home .middle .track {
     margin: 2%;
   }
 }
-.home .space-images .analyze {
+.home .middle .analyze {
   background: #FAFAFA;
   margin: 0 1%;
   padding: 1%;
 }
 @media (max-width: 667px) {
-  .home .space-images .analyze {
+  .home .middle .analyze {
     margin: 2%;
   }
 }
-.home .walk {
+.home .noDistractions {
   margin-top: 0;
   border-top: 1px solid #dee2e6;
   padding: 0 4%;
@@ -561,7 +616,7 @@ footer nav a:hover {
   background: #FAFAFA;
 }
 @media (max-width: 667px) {
-  .home .walk {
+  .home .noDistractions {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -570,40 +625,40 @@ footer nav a:hover {
     padding: 1%;
   }
 }
-.home .walk .walk-text {
+.home .noDistractions .focus {
   width: 50%;
 }
 @media (max-width: 1000px) {
-  .home .walk .walk-text {
+  .home .noDistractions .focus {
     width: 70%;
   }
 }
 @media (max-width: 667px) {
-  .home .walk .walk-text {
+  .home .noDistractions .focus {
     width: 100%;
   }
 }
-.home .walk .walk-text h3 {
+.home .noDistractions .focus h3 {
   margin-bottom: 2%;
   color: #008B5B;
 }
-.home .walk .walk-text p {
+.home .noDistractions .focus p {
   margin-bottom: 3%;
 }
-.home .walk .walk-text .btn {
+.home .noDistractions .focus .btn {
   width: 80%;
 }
 @media (max-width: 1000px) {
-  .home .walk .walk-text .btn {
+  .home .noDistractions .focus .btn {
     width: 70%;
   }
 }
 @media (max-width: 667px) {
-  .home .walk .walk-text .btn {
+  .home .noDistractions .focus .btn {
     width: 50%;
   }
 }
-.home .walk .walk-text button {
+.home .noDistractions .focus button {
   width: 45%;
   height: 5vh;
   border-radius: 4px;
@@ -614,31 +669,31 @@ footer nav a:hover {
   background-color: #FFFFFF;
 }
 @media (max-width: 1000px) {
-  .home .walk .walk-text button {
+  .home .noDistractions .focus button {
     width: 70%;
   }
 }
 @media (max-width: 667px) {
-  .home .walk .walk-text button {
+  .home .noDistractions .focus button {
     width: 100%;
     height: 8vh;
   }
 }
-.home .walk .walk-text button:hover {
+.home .noDistractions .focus button:hover {
   background-color: #008B5B;
   color: #FAFAFA;
 }
-.home .walk .walk-img {
+.home .noDistractions .screenshot {
   width: 30%;
   padding-top: 4%;
 }
 @media (max-width: 1000px) {
-  .home .walk .walk-img {
+  .home .noDistractions .screenshot {
     display: none;
   }
 }
 @media (max-width: 667px) {
-  .home .walk .walk-img {
+  .home .noDistractions .screenshot {
     display: none;
   }
 }
@@ -662,6 +717,11 @@ footer nav a:hover {
   margin: auto;
   min-width: 50%;
   min-height: 50%;
+}
+@media (max-width: 1000px) {
+  .about {
+    margin-top: 7%;
+  }
 }
 @media (max-width: 667px) {
   .about {
@@ -700,6 +760,11 @@ footer nav a:hover {
   justify-content: center;
   font-size: 2rem;
 }
+@media (max-width: 667px) {
+  .about .team .PL .jackie h2 {
+    Font-size: 2.5rem;
+  }
+}
 .about .team .uiDev {
   display: flex;
   justify-content: space-evenly;
@@ -724,6 +789,11 @@ footer nav a:hover {
   justify-content: center;
   font-size: 2rem;
 }
+@media (max-width: 667px) {
+  .about .team .uiDev .Isaac h2 {
+    Font-size: 2.5rem;
+  }
+}
 .about .team .uiDev .Charlie {
   width: 45%;
   padding: 2%;
@@ -741,6 +811,11 @@ footer nav a:hover {
   display: flex;
   justify-content: center;
   font-size: 2rem;
+}
+@media (max-width: 667px) {
+  .about .team .uiDev .Charlie h2 {
+    Font-size: 2.5rem;
+  }
 }
 .about .team .React1 {
   display: flex;
@@ -766,6 +841,11 @@ footer nav a:hover {
   justify-content: center;
   font-size: 2rem;
 }
+@media (max-width: 667px) {
+  .about .team .React1 .Allen h2 {
+    Font-size: 2.5rem;
+  }
+}
 .about .team .React1 .Adebola {
   width: 45%;
   padding: 2%;
@@ -783,6 +863,11 @@ footer nav a:hover {
   display: flex;
   justify-content: center;
   font-size: 2rem;
+}
+@media (max-width: 667px) {
+  .about .team .React1 .Adebola h2 {
+    Font-size: 2.5rem;
+  }
 }
 .about .team .react2 {
   display: flex;
@@ -808,6 +893,11 @@ footer nav a:hover {
   justify-content: center;
   font-size: 2rem;
 }
+@media (max-width: 667px) {
+  .about .team .react2 .Kai h2 {
+    Font-size: 2.5rem;
+  }
+}
 .about .team .react2 .Robert {
   width: 45%;
   padding: 2%;
@@ -825,6 +915,11 @@ footer nav a:hover {
   display: flex;
   justify-content: center;
   font-size: 2rem;
+}
+@media (max-width: 667px) {
+  .about .team .react2 .Robert h2 {
+    Font-size: 2.5rem;
+  }
 }
 .about .team .backendDev {
   display: flex;
@@ -850,6 +945,11 @@ footer nav a:hover {
   justify-content: center;
   font-size: 2rem;
 }
+@media (max-width: 667px) {
+  .about .team .backendDev .Sergio h2 {
+    Font-size: 2.5rem;
+  }
+}
 .about .team .backendDev .Mike {
   width: 45%;
   padding: 2%;
@@ -867,4 +967,9 @@ footer nav a:hover {
   display: flex;
   justify-content: center;
   font-size: 2rem;
+}
+@media (max-width: 667px) {
+  .about .team .backendDev .Mike h2 {
+    Font-size: 2.5rem;
+  }
 }
