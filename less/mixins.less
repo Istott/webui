@@ -1,0 +1,65 @@
+.buttonsignup( @background-color: @alabaster; @color: @malachite; @font-size: 1.8rem; ) {
+    width: 45%;
+    height: 5vh;
+    border-radius: 4px;
+    background-color: @alabaster;
+    color: @color;
+    border: 1px @malachite solid;
+    font-size: @font-size;
+}
+
+.bordercolor() {
+    
+}
+
+.justifybetween() {
+    jusitify-content: space-around;
+    align-items: center;
+}
+
+.teamstyle() {
+    width: 45%;
+    padding: 2%;
+    background-color: @silvergray;
+    opacity: .9;
+    margin: 1%;
+    z-index: -1;
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+    }
+
+    h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    @media @phone {
+        h2 {
+            Font-size: 2.5rem;
+        }
+    }
+}
+
+.middlestuff() {
+    height: 35vh;
+    background: @alabaster;
+    margin: 0 1%;
+    padding: 3% 3% 6% 3%;
+
+    @media @phone {
+        margin: 2%;
+    }  
+}
+
+    
+
+//escapins//
+
+@phone: ~"(max-width: 667px)";
+
+@ipadmini: ~"(max-width: 1000px)";

@@ -1,0 +1,80 @@
+footer {
+  color: #FFFFFF;
+  background: #2D2D2D;
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 10;
+  position: relative;
+
+  @media @phone {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .copyright {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+
+    @media @ipadmini {
+      width: 50%;
+    }
+
+    @media @phone {
+      width: 100%;
+    }
+
+    p1 {
+      color: @malachite;
+      font-size: 1.6rem;
+      padding-left: .4%;
+      width: 50%;
+      display: flex;
+      align-items: center;
+         
+      @media @ipadmini {
+        width: 45%;
+      }
+
+      @media @phone {
+        width: 25%;
+      }
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    padding-right: 1%;
+    
+    :nth-child(2) {
+      width: 35%;
+
+      @media @ipadmini {
+        width: 80%;
+      }
+    }
+
+    @media @ipadmini {
+      justify-content: center;
+    }
+  }
+
+  nav a {
+    text-decoration: none;
+    color: @malachite;
+    font-size: 1.8rem;
+    padding-right: 1%;
+    
+    &:hover {
+      color: @alabaster;
+    }
+
+    @media @phone {
+      padding-top: 5%;
+    }
+  }
+}
